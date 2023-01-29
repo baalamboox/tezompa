@@ -1,0 +1,9 @@
+aside {
+    position: absolute;
+    width: 180px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background-color: rgba($color: #000, $alpha: 0.75);
+    backdrop-filter: blur(10px);
+}

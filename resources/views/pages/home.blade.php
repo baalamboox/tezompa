@@ -3,10 +3,10 @@
 @section('title', 'Inicio')
 
 @section('scaffolding')
-<div class="container">
+<div class="container my-5">
     <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
+        <div class="col-md-12">
+            <div class="card text-dark">
                 <div class="card-header"><i class="fa-solid fa-house me-2"></i>{{ __('Dashboard') }}</div>
                 <div class="card-body">
                     @if (session('status'))
