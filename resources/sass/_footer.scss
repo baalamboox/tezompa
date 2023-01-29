@@ -1,6 +1,6 @@
 footer {
     height: 50px;
     margin-left: 300px;
-    background-color: rgba($color: #000, $alpha: 0.6);
+    background-color: rgba($color: $background-color, $alpha: $background-opacity);
     backdrop-filter: blur(10px);
 }

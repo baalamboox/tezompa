@@ -1,5 +1,5 @@
 section {
     margin-right: 180px;
-    background-color: rgba($color: #000, $alpha: 0.8);
+    background-color: rgba($color: $background-color, $alpha: $background-opacity);
     backdrop-filter: blur(10px);
 }
