@@ -10,6 +10,7 @@ nav {
         width: inherit;
         height: inherit;
         overflow: hidden;
+        background-color: #909090;
         z-index: 2;
         .circle-1, .circle-2, .circle-3 {
             position: absolute;
@@ -19,7 +20,7 @@ nav {
             height: 300px;
             top: -150px;
             left: -150px;
-            background: linear-gradient(45deg, blue, red);
+            background: linear-gradient(45deg, purple, red);
         }
         .circle-2 {
             width: 400px;
@@ -33,7 +34,7 @@ nav {
             height: 150px;
             top: 350px;
             left: 80px;
-            background: linear-gradient(45deg, purple, blue);
+            background: linear-gradient(45deg, purple, red);
         }
     }
     .nav-container {
@@ -41,9 +42,21 @@ nav {
         width: inherit;
         height: inherit;
         overflow: hidden;
-        background-color: rgba($color: white, $alpha: 0.5);
+        background-color: rgba($color: white, $alpha: 0.6);
         backdrop-filter: blur(50px);
         z-index: 3;
+    }
+    .btn-open-nav {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: -25px;
+        top: 50%;
+        cursor: pointer;
+        visibility: collapse;
+        background-color: rgba($color: $background-color, $alpha: $background-opacity);
+        backdrop-filter: blur(10px);
+        z-index: 4;
     }
     .btn-close-nav {
         position: absolute;
@@ -54,6 +67,10 @@ nav {
         cursor: pointer;
         background-color: rgba($color: $background-color, $alpha: $background-opacity);
         backdrop-filter: blur(10px);
+        z-index: 4;
     }
-
+    .bg-card {
+        background-color: rgba($color: #fff, $alpha: 0.1);
+        backdrop-filter: blur(25px);
+    }
 }

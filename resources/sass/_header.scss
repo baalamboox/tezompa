@@ -3,9 +3,11 @@ header {
     margin-left: 300px;
     background-color: rgba($color: $background-color, $alpha: $background-opacity);
     backdrop-filter: blur(10px);
-
-    .btn-open-nav {
-        cursor: pointer;
-        visibility: collapse;
+    .brand-title {
+        visibility: hidden;
+        img {
+            position: relative;
+            top: 16px;
+        }
     }
 }
