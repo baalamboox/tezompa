@@ -1,13 +1,24 @@
 header {
     height: 50px;
     margin-left: 300px;
-    background-color: rgba($color: $background-color, $alpha: $background-opacity);
-    backdrop-filter: blur(10px);
+    background-color: rgba($color: #fff, $alpha: 0.6);
+    backdrop-filter: blur(50px);
     .brand-title {
         display: none;
         img {
             position: relative;
             top: 16px;
+        }
+    }
+    .search-container {
+        width: 250px;
+        .search-input {
+            height: 30px;
+            input:focus {
+                outline: none;
+            }
+            background-color: rgba($color: #fff, $alpha: 0.4);
+            backdrop-filter: blur(25px);
         }
     }
 }

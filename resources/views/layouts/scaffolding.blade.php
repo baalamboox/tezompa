@@ -14,17 +14,11 @@
             <small class="d-block" id="date"></small>
         </span>
     </div>
-    <div class="search-container">
-        <div class="d-flex align-items-center justify-content-between rounded-pill form-control">
-            <div class="form-floating">
-                <input type="text" class="form-control rounded-pill border-0" id="search" name="search" placeholder="Buscar">
-                <label for="search" class="form-label">{{ __('Buscar') }}</label>
-            </div>
-            <div>
-                <span class="btn d-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
-            </div>
+    <div class="search-container px-0">
+        <div class="search-input d-flex align-items-center w-100 rounded-pill form-control ps-2 pe-0 border-0">
+            <input type="text" class="border-0 w-100 bg-transparent" id="search" name="search" placeholder="Buscar">
+            <span class="btn d-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
         </div>
-        
     </div>
 </header>
 <nav class="shadow-lg">
@@ -193,7 +187,15 @@
         </div>
     </aside>
 </main>
-<footer class="shadow-lg">
-    <span>Aquí va el footer</span>
+<footer class="d-flex align-items-center justify-content-between shadow-lg px-4">
+    <div class="text-center">
+        <span class="text-muted">Creado y diseñado por Guillermo Jiménez</span>
+    </div>
+    <div>
+        <span class="text-muted">Xzunun &copy; 2023</span>
+    </div>
+    <div>
+        <span class="btn btn-primary rounded-circle" title="Ir al principio"><i class="fa-solid fa-caret-up"></i></span>
+    </div>
 </footer>
 @endsection
