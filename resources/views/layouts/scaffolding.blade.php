@@ -6,10 +6,12 @@
         <img src="{{ asset('favicon.png') }}" alt="Logo" width="80px" height="80px" class="rounded-circle bg-white p-2 shadow">
         <span class="fs-4">{{ config('app.name') }}</span>
     </div>
-    <div>
-        <span class="text-center" id="date_time">
-            <small class="d-block">10:30</small>
-            <small class="d-block">30/01/2023</small>
+    <div class="weather-container" id="weather_container">
+    </div>
+    <div class="date-time-container">
+        <span class="text-center">
+            <small class="d-block" id="time"></small>
+            <small class="d-block" id="date"></small>
         </span>
     </div>
     <div class="search-container">
