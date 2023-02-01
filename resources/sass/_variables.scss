@@ -1,12 +1,15 @@
-@include fontFace;
+// Override Bootstrap 5 colors
 
-* {
-    font-family: 'Manjari';
-}
+$blue:    #3A0CA3;
+$indigo:  #6610f2;
+$purple:  #6f42c1;
+$pink:    #F72585;
+$red:     #dc3545;
+$orange:  #fd7e14;
+$yellow:  #ffc107;
+$green:   #198754;
+$teal:    #20c997;
+$cyan:    #4CC9F0;
 
-body {
-    background-color: #909090 !important;
-}
-
-$background-color: #fff;
-$background-opacity: 1.0;
+$background-color: #000;
+$background-opacity: 0.6;
