@@ -4,8 +4,8 @@ aside {
     height: 100%;
     right: 0;
     top: 0;
-    background-color: rgba($color: $background-color, $alpha: $background-opacity);
-    backdrop-filter: blur(10px);
+    background-color: rgba($color: #000, $alpha: 0.37);
+    backdrop-filter: blur(25px);
     overflow: hidden;
 
     .btn-close-aside {
@@ -15,7 +15,7 @@ aside {
         left: -25px;
         top: 0;
         cursor: pointer;
-        background-color: rgba($color: $background-color, $alpha: $background-opacity);
+        background-color: rgba($color: #fff, $alpha: 0.37);
         backdrop-filter: blur(10px);
     }
 
@@ -26,7 +26,7 @@ aside {
         right: -25px;
         top: 0;
         cursor: pointer;
-        background-color: rgba($color: $background-color, $alpha: $background-opacity);
+        background-color: rgba($color: #fff, $alpha: 0.37);
         backdrop-filter: blur(10px);
         visibility: hidden;
     }

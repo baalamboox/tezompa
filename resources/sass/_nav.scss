@@ -4,48 +4,10 @@ nav {
     height: 100vh;
     left: 0;
     top: 0;
-    z-index: 1;
-    // .nav-circles-container {
-    //     position: absolute;
-    //     width: inherit;
-    //     height: inherit;
-    //     overflow: hidden;
-    //     background-color: #909090;
-    //     z-index: 2;
-    //     .circle-1, .circle-2, .circle-3 {
-    //         position: absolute;
-    //     }
-    //     .circle-1 {
-    //         width: 300px;
-    //         height: 300px;
-    //         top: -150px;
-    //         left: -150px;
-    //         background: linear-gradient(45deg, #EB3349, #F45C43);
-    //     }
-    //     .circle-2 {
-    //         width: 400px;
-    //         height: 400px;
-    //         bottom: -200px;
-    //         left: 0;
-    //         background: linear-gradient(45deg, #F45C43, #EB3349);
-    //     }
-    //     .circle-3 {
-    //         width: 150px;
-    //         height: 150px;
-    //         top: 350px;
-    //         left: 80px;
-    //         background: linear-gradient(45deg, #EB3349, #F45C43);
-    //     }
-    // }
-    .nav-container {
-        position: absolute;
-        width: inherit;
-        height: inherit;
-        overflow: hidden;
-        background-color: rgba($color: white, $alpha: 0.6);
-        backdrop-filter: blur(50px);
-        z-index: 2;
-    }
+    overflow: hidden;
+    background-color: rgba($color: #000, $alpha: 0.37);
+    backdrop-filter: blur(25px);
+    z-index: 2;
     .btn-open-nav {
         position: absolute;
         width: 50px;
@@ -54,9 +16,9 @@ nav {
         top: 50%;
         cursor: pointer;
         visibility: collapse;
-        background-color: rgba($color: $background-color, $alpha: $background-opacity);
+        background-color: rgba($color: #fff, $alpha: 0.37);
         backdrop-filter: blur(10px);
-        z-index: 3;
+        z-index: 2;
     }
     .btn-close-nav {
         position: absolute;
@@ -65,9 +27,9 @@ nav {
         right: -25px;
         top: 50%;
         cursor: pointer;
-        background-color: rgba($color: $background-color, $alpha: $background-opacity);
+        background-color: rgba($color: #fff, $alpha: 0.37);
         backdrop-filter: blur(10px);
-        z-index: 4;
+        z-index: 2;
     }
     .bg-card {
         background-color: rgba($color: #fff, $alpha: 0.1);

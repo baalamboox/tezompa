@@ -29,6 +29,8 @@
             <div class="circle-11 rounded-circle shadow-lg"></div>
             <div class="circle-12 rounded-circle shadow-lg"></div>
         </div>
+        <div class="mask-blur">
+        </div>
         <div class="app-container">
             @yield('app')
         </div>

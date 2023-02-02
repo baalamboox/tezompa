@@ -17,6 +17,10 @@ Route::get('/', function () {
     return redirect('login');
 })->name('index');
 
+Route::get('/categories', function () {
+    return view('pages.categories');
+})->name('categories');
+
 Auth::routes();
 
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');

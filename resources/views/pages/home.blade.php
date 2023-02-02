@@ -3,8 +3,8 @@
 @section('title', 'Inicio')
 
 @section('scaffolding')
-<div class="container py-5">
-    <div class="row justify-content-center">
+<div class="container vh-100 py-5">
+    <div class="row">
         <div class="col-md-12">
             <div class="card text-dark">
                 <div class="card-header"><i class="fa-solid fa-house me-2"></i>{{ __('Dashboard') }}</div>

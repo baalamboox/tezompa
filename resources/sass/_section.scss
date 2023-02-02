@@ -1,5 +1,18 @@
 section {
     margin-right: 180px;
-    background-color: rgba($color: $background-color, $alpha: $background-opacity);
-    backdrop-filter: blur(10px);
+    .form-container {
+        position: relative;
+        .border-title {
+            position: absolute;
+            top: -14px;
+            backdrop-filter: blur(100px);
+        }
+    }
+    .category-card {
+        width: 200px;
+        height: 300px;
+    }
+    .image-category {
+        top: -15px;
+    }
 }
