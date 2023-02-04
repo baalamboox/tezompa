@@ -45,11 +45,15 @@
                                 </div>
                             </div>
                             <div class="col">
-                                <div class="form-floating">
-                                    <input type="password" class="form-control bg-secondary text-white" id="password-confirm" name="password_confirmation" placeholder="Confirmar contraseña" required>
-                                    <label for="password-confirm" class="form-label text-white"><i class="fa-solid fa-lock me-2"></i>{{ __('Confirmar contraseña') }}</label>
+                                <div class="form-floating mb-3">
+                                    <input type="password" class="form-control bg-secondary text-white" id="password_confirm" name="password_confirmation" placeholder="Confirmar contraseña" required>
+                                    <label for="password_confirm" class="form-label text-white"><i class="fa-solid fa-lock me-2"></i>{{ __('Confirmar contraseña') }}</label>
                                 </div>
                             </div>
+                        </div>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" role="switch" id="show_password">
+                            <label class="form-check-label text-white" for="show_password">{{ __('Mostrar contraseñas') }}</label>
                         </div>
                         <div class="text-end my-4">
                             <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-user-plus me-2"></i>{{ __('Registrar') }}</button>

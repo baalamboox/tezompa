@@ -1,4 +1,6 @@
 import './bootstrap';
-import './header';
+import './login';
+import './register';
+// import './header';
 import './nav';
 import './aside';

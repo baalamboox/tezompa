@@ -15,7 +15,7 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control bg-secondary text-white @error('email') is-invalid @enderror" id="email" name="email" placeholder="Usuario" value="{{ old('email') }}" required autocomplete="false">
+                            <input type="text" class="form-control bg-secondary text-white @error('email') is-invalid @enderror" id="email" name="email" placeholder="Usuario" value="{{ old('email') }}" required >
                             <label for="email" class="form-label text-white"><i class="fa-solid fa-user me-2"></i>{{ __('Usuario') }}</label>
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
@@ -33,10 +33,9 @@
                             @enderror
                         </div>
                         <div class="form-check form-switch mb-3">
-                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
-                            <label class="form-check-label text-white" for="flexSwitchCheckDefault">{{ __('Mostrar contraseña') }}</label>
-                          </div>
-                          
+                            <input class="form-check-input" type="checkbox" role="switch" id="show_password">
+                            <label class="form-check-label text-white" for="show_password">{{ __('Mostrar contraseña') }}</label>
+                        </div>  
                         <div class="my-4">
                             <button type="submit" class="btn-login btn btn-primary w-100"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>{{ __('Ingresar') }}</button>
                         </div>
