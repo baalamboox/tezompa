@@ -1,6 +1,15 @@
-.login-create-account {
+.btn-login:hover {
+    box-shadow: 0 0 10px 1px $primary;
+    background-color: $primary;
+}
+
+.login-register {
     text-decoration: none;
 }
-.login-create-account:hover {
+
+.login-register:hover {
     text-decoration: underline;
+    text-decoration-color: $primary;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
 }

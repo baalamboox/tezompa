@@ -32,11 +32,16 @@
                                 </span>
                             @enderror
                         </div>
+                        <div class="form-check form-switch mb-3">
+                            <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckDefault">
+                            <label class="form-check-label text-white" for="flexSwitchCheckDefault">{{ __('Mostrar contraseña') }}</label>
+                          </div>
+                          
                         <div class="my-4">
-                            <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>{{ __('Ingresar') }}</button>
+                            <button type="submit" class="btn-login btn btn-primary w-100"><i class="fa-solid fa-arrow-right-to-bracket me-2"></i>{{ __('Ingresar') }}</button>
                         </div>
                         <div class="text-end">
-                            <small><a href="{{ route('register') }}" class="login-create-account text-white">{{ __('¡Crear una cuenta!') }}</a></small>
+                            <small><a href="{{ route('register') }}" class="login-register text-white">{{ __('¡Crear una cuenta!') }}</a></small>
                         </div>
                     </form>
                 </div>
