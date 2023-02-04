@@ -15,7 +15,7 @@
                     <form method="POST" action="{{ route('login') }}">
                         @csrf
                         <div class="form-floating mb-3">
-                            <input type="text" class="form-control bg-secondary text-white @error('email') is-invalid @enderror" id="email" name="email" placeholder="Usuario" value="{{ old('email') }}" required>
+                            <input type="text" class="form-control bg-secondary text-white @error('email') is-invalid @enderror" id="email" name="email" placeholder="Usuario" value="{{ old('email') }}" required autocomplete="false">
                             <label for="email" class="form-label text-white"><i class="fa-solid fa-user me-2"></i>{{ __('Usuario') }}</label>
                             @error('email')
                                 <span class="invalid-feedback" role="alert">
