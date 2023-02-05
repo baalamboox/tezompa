@@ -12,7 +12,8 @@
                 <i class="fa-solid fa-ellipsis-vertical text-primary"></i>
             </span>
             <div class="collapse navbar-collapse" id="collapse_menu">
-                <ul class="navbar-nav d-flex align-items-center justify-content-between w-100">
+                <br>
+                <ul class="navbar-nav d-flex flex-row align-items-center justify-content-md-between justify-content-sm-between justify-content-evenly w-100">
                     <li class="nav-item">
                         <div class="text-white" id="weather_container"></div>
                     </li>
@@ -22,14 +23,14 @@
                             <small class="d-block" id="date"></small>
                         </div>
                     </li>
-                    <li class="nav-item">
-                        <div class="d-flex align-items-center rounded bg-secondary">
-                            <input type="text" class="bg-transparent text-white border-0 w-100 px-2" placeholder="Buscar">
-                            <span class="btn d-flex text-primary" id="btn-search-on-page"><i class="fa-solid fa-magnifying-glass"></i></span>
-                        </div>
-                    </li>
+                    <li class="d-none d-sm-none d-md-block"></li>
                 </ul>
-                
+                <br>
+                <div class="d-flex align-items-center rounded bg-secondary">
+                    <input type="text" class="bg-transparent text-white border-0 w-100 px-2" placeholder="Buscar">
+                    <span class="btn d-flex text-primary" id="btn-search-on-page"><i class="fa-solid fa-magnifying-glass"></i></span>
+                </div>
+                <hr class="d-block d-sm-none text-primary">
             </div>
         </div>
     </nav>
@@ -38,7 +39,8 @@
 
 
 
-<main>
+<main class="bg-secondary fill-screen">
+    <h1 class="text-white">Content here!</h1>
     <h1 class="text-white my-5">Content here!</h1>
     <h1 class="text-white my-5">Content here!</h1>
     <h1 class="text-white my-5">Content here!</h1>
@@ -54,12 +56,11 @@
     <h1 class="text-white my-5">Content here!</h1>
     <h1 class="text-white my-5">Content here!</h1>
     <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-0">Content here!</h1>
 </main>
-<footer>
 
+<footer class="d-flex align-items-center justify-content-center bg-dark shadow-lg sticky-bottom">
+    <span class="text-white">Xzunun &copy; 2023</span>
 </footer>
 
 
@@ -232,7 +233,5 @@
 </main>
 
 
-<footer class="d-flex align-items-center justify-content-center shadow-lg sticky-bottom">
-    <span class="text-white">Xzunun &copy; 2023</span>
-</footer> --}}
+ --}}
 @endsection
