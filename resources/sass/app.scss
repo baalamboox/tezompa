@@ -8,25 +8,20 @@
 @import 'bootstrap/scss/bootstrap';
 
 // Fontawesome
-
 @import '@fortawesome/fontawesome-free/scss/fontawesome';
 @import '@fortawesome/fontawesome-free/scss/solid';
 
 // Scaffolding
-
 @import './login';
 @import './register';
 @import './header';
-// @import './nav';
 @import './main';
-// @import './section';
-// @import './aside';
 @import './footer';
 
 // Using Manjari font
-
 @include fontFace;
 
+// Set Manjari font for all
 * {
     font-family: 'Manjari';
 }

@@ -13,17 +13,16 @@ const longitud = -98.95928;
 
 btnCollapseMenu?.addEventListener('click', () => {
     new Collapse(collapseMenu, {
-        toggle: true
+        toggle: true,
     });
-    
-})
+});
 
 collapseMenu?.addEventListener('hidden.bs.collapse', () => headerNav.classList.add('py-0'));
 collapseMenu?.addEventListener('show.bs.collapse', () => headerNav.classList.remove('py-0'));
 
 weatherContainer != null ? [
     fetch(`https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitud}&units=metric&appid=${apiKey}`).then(async data => {
-        const weatherCurrent = await data.json();
+        let weatherCurrent = await data.json();
         weatherContainer.innerHTML = `
             <i class="fa-solid fa-cloud me-1 text-primary"></i>
             <small class="me-1">${ weatherCurrent.main.temp }°</small>
@@ -37,5 +36,16 @@ weatherContainer != null ? [
     }),
 ] : false;
 
-time.textContent = '00:00';
-date.textContent = '01/01/2023';
+const getCustomDate = () => {
+    let date = new Date();
+    let completeDate = '';
+    if(date.getDate() && (date.getMonth() + 1) <= 9) {
+        completeDate += '0' + date.getDate().toString() + '/' + '0' + (date.getMonth() + 1) + '/' + date.getFullYear();
+    } else {
+        completeDate += date.getDate().toString() + '/' + (date.getMonth() + 1) + '/' + date.getFullYear();
+    }
+    return completeDate;
+}
+
+time?.append('83:97');
+date?.append(getCustomDate());

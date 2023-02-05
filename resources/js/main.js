@@ -1,7 +1,7 @@
-const mainTag = document.getElementsByTagName('main')[0];
+const main = document.getElementsByTagName('main')[0];
 
-mainTag.offsetHeight > window.innerHeight ? [
-    console.log('se paso'),
+main?.offsetHeight > window.innerHeight ? [
+    main?.classList.remove('fill-screen'),
 ] : [
-    console.log('No se paso'),
+    main?.classList.add('fill-screen'),
 ];

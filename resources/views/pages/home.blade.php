@@ -3,7 +3,7 @@
 @section('title', 'Inicio')
 
 @section('scaffolding')
-<div class="container vh-100 py-5">
+<div class="container py-5">
     <div class="row">
         <div class="col-md-12">
             <div class="card text-dark">

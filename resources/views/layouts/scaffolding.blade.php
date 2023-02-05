@@ -35,30 +35,9 @@
         </div>
     </nav>
 </header>
-
-
-
-
-<main class="bg-secondary fill-screen">
-    <h1 class="text-white">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-5">Content here!</h1>
-    <h1 class="text-white my-0">Content here!</h1>
+<main>
+    @yield('scaffolding')
 </main>
-
 <footer class="d-flex align-items-center justify-content-center bg-dark shadow-lg sticky-bottom">
     <span class="text-white">Xzunun &copy; 2023</span>
 </footer>
@@ -209,29 +188,5 @@
         </div>
     </div>
 </nav>
-
-
-
-
-
-
-<main>
-    <section>
-        @yield('scaffolding')
-    </section>
-    <aside class="shadow-lg">
-        <div class="btn-close-aside rounded-circle d-flex align-items-center pe-2 justify-content-end" id="close_aside"
-            title="Ocultar barra lateral">
-            <i class="fa-solid fa-chevron-right"></i>
-        </div>
-        <div class="btn-open-aside rounded-circle d-flex align-items-center ps-2" id="open_aside"
-            title="Mostrar barra lateral">
-            <i class="fa-solid fa-chevron-left"></i>
-        </div>
-        @yield('aside-container')
-    </aside>
-</main>
-
-
  --}}
 @endsection
