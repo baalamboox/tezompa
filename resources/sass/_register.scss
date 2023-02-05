@@ -1,6 +1,15 @@
-.register-account-exist {
+.btn-register:hover {
+    box-shadow: 0 0 10px 1px $primary;
+    background-color: $primary;
+}
+
+.register-login {
     text-decoration: none;
 }
-.register-account-exist:hover {
+
+.register-login:hover {
     text-decoration: underline;
+    text-decoration-color: $primary;
+    text-decoration-style: solid;
+    text-decoration-thickness: 2px;
 }

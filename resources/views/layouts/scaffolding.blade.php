@@ -1,35 +1,80 @@
 @extends('layouts.app')
 
 @section('app')
-<header class="d-flex align-items-center justify-content-between px-2 text-white sticky-top shadow-lg">
-    <div class="brand-title" id="brand_title">
-        <img src="{{ asset('favicon.png') }}" alt="Logo" width="80px" height="80px" class="rounded-circle bg-white p-1 shadow">
-        <span class="fs-4">{{ config('app.name') }}</span>
-    </div>
-    <div class="weather-container" id="weather_container">
-    </div>
-    <div class="date-time-container">
-        <span class="text-center">
-            <small class="d-block" id="time"></small>
-            <small class="d-block" id="date"></small>
-        </span>
-    </div>
-    <div class="search-container px-0">
-        <div class="search-input d-flex align-items-center w-100 rounded-pill form-control ps-2 pe-0">
-            <input type="text" class="border-0 w-100 bg-transparent" id="search" name="search" placeholder="Buscar">
-            <span class="btn d-flex align-items-center"><i class="fa-solid fa-magnifying-glass"></i></span>
+<header class="sticky-top">
+    <nav class="navbar navbar-expand-sm bg-dark h-100 py-0">
+        <div class="container-fluid bg-dark">
+            <a class="d-flex align-items-center nav-link text-white d-sm-none" href="{{ route('home') }}">
+                <img src="{{ asset('favicon.png') }}" alt="Logo" class="rounded-circle" width="36" height="36">
+                <span class="mx-1">{{ config('app.name') }}</span>
+            </a>
+            <span class="navbar-toggler" id="btn_collapse_menu">
+                <i class="fa-solid fa-ellipsis-vertical text-primary"></i>
+            </span>
+            <div class="collapse navbar-collapse" id="collapse_menu">
+                <ul class="navbar-nav d-flex align-items-center justify-content-between w-100">
+                    <li class="nav-item">
+                        <div class="text-white" id="weather_container"></div>
+                    </li>
+                    <li class="nav-item d-sm-none d-md-block">
+                        <div class="text-white text-center" id="">
+                            <small class="d-block" id="time"></small>
+                            <small class="d-block" id="date"></small>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex align-items-center rounded bg-secondary">
+                            <input type="text" class="bg-transparent text-white border-0 w-100 px-2" placeholder="Buscar">
+                            <span class="btn d-flex text-primary" id="btn-search-on-page"><i class="fa-solid fa-magnifying-glass"></i></span>
+                        </div>
+                    </li>
+                </ul>
+                
+            </div>
         </div>
-    </div>
+    </nav>
 </header>
-<nav class="nav-container d-flex flex-column justify-content-between shadow-lg">
-    <div class="btn-open-nav rounded-circle d-flex align-items-center justify-content-end pe-2 shadow" id="open_nav" title="Mostrar barra de navegación">
+
+
+
+
+<main>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+    <h1 class="text-white my-5">Content here!</h1>
+</main>
+<footer>
+
+</footer>
+
+
+{{-- <nav class="nav-container d-flex flex-column justify-content-between shadow-lg">
+    <div class="btn-open-nav rounded-circle d-flex align-items-center justify-content-end pe-2 shadow" id="open_nav"
+        title="Mostrar barra de navegación">
         <i class="fa-solid fa-chevron-right"></i>
     </div>
-    <div class="btn-close-nav rounded-circle d-flex align-items-center ps-2 shadow" id="close_nav" title="Ocultar barra de navegación">
+    <div class="btn-close-nav rounded-circle d-flex align-items-center ps-2 shadow" id="close_nav"
+        title="Ocultar barra de navegación">
         <i class="fa-solid fa-chevron-left"></i>
     </div>
     <div class="text-center my-4">
-        <img src="{{ asset('favicon.png') }}" class="shadow-lg border rounded-circle p-1 bg-white" alt="Logo" width="120px" height="120px">
+        <img src="{{ asset('favicon.png') }}" class="shadow-lg border rounded-circle p-1 bg-white" alt="Logo"
+            width="120px" height="120px">
         <div class="mt-2">
             <span class="fs-4 text-white">{{ config('app.name') }}</span>
             <small class="d-block text-white">Tlapalería</small>
@@ -56,7 +101,8 @@
                 </a>
             </li>
             <li class="nav-item w-100">
-                <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse" data-bs-target="#stock" aria-expanded="false" aria-controls="stock">
+                <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#stock" aria-expanded="false" aria-controls="stock">
                     <i class="fa-solid fa-caret-right me-2"></i>
                     <i class="fa-solid fa-cubes me-2"></i>
                     {{ __('Almacén') }}
@@ -99,7 +145,8 @@
                 </div>
             </li>
             <li class="nav-item w-100">
-                <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse" data-bs-target="#accounting" aria-expanded="false" aria-controls="accounting">
+                <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#accounting" aria-expanded="false" aria-controls="accounting">
                     <i class="fa-solid fa-caret-right me-2"></i>
                     <i class="fa-solid fa-calculator me-2"></i>
                     {{ __('Contabilidad') }}
@@ -132,7 +179,8 @@
         </ul>
     </div>
     <div class="mb-4">
-        <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse" data-bs-target="#user" aria-expanded="false" aria-controls="user">
+        <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse" data-bs-target="#user"
+            aria-expanded="false" aria-controls="user">
             <i class="fa-solid fa-caret-right me-2"></i>
             <i class="fa-solid fa-user me-2 rounded-circle border p-2 shadow"></i>
             {{ Auth::user()->name }}
@@ -147,7 +195,8 @@
                         </a>
                     </li>
                     <li class="nav-item w-100 mt-2 text-center">
-                        <a href="{{ route('logout') }}" class="nav-link px-0 pb-0 text-white" onclick="event.preventDefault(); document.querySelector('#logout_form').submit();">
+                        <a href="{{ route('logout') }}" class="nav-link px-0 pb-0 text-white"
+                            onclick="event.preventDefault(); document.querySelector('#logout_form').submit();">
                             <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Cerrar sesión
                         </a>
                         <form action="{{ route('logout') }}" method="POST" id="logout_form">
@@ -159,21 +208,31 @@
         </div>
     </div>
 </nav>
+
+
+
+
+
+
 <main>
     <section>
         @yield('scaffolding')
     </section>
     <aside class="shadow-lg">
-        <div class="btn-close-aside rounded-circle d-flex align-items-center pe-2 justify-content-end" id="close_aside" title="Ocultar barra lateral">
+        <div class="btn-close-aside rounded-circle d-flex align-items-center pe-2 justify-content-end" id="close_aside"
+            title="Ocultar barra lateral">
             <i class="fa-solid fa-chevron-right"></i>
         </div>
-        <div class="btn-open-aside rounded-circle d-flex align-items-center ps-2" id="open_aside" title="Mostrar barra lateral">
+        <div class="btn-open-aside rounded-circle d-flex align-items-center ps-2" id="open_aside"
+            title="Mostrar barra lateral">
             <i class="fa-solid fa-chevron-left"></i>
         </div>
         @yield('aside-container')
     </aside>
 </main>
+
+
 <footer class="d-flex align-items-center justify-content-center shadow-lg sticky-bottom">
     <span class="text-white">Xzunun &copy; 2023</span>
-</footer>
+</footer> --}}
 @endsection

@@ -1,24 +1,9 @@
 header {
     height: 50px;
-    margin-left: 300px;
-    background-color: rgba($color: #000, $alpha: 0.37);
-    backdrop-filter: blur(25px);
-    .brand-title {
-        display: none;
-        img {
-            position: relative;
-            top: 16px;
-        }
+    .navbar-toggler {
+        cursor: pointer;
     }
-    .search-container {
-        width: 250px;
-        .search-input {
-            height: 30px;
-            input:focus {
-                outline: none;
-            }
-            background-color: rgba($color: #fff, $alpha: 0.4);
-            backdrop-filter: blur(25px);
-        }
+    input:focus {
+        outline: none;
     }
 }

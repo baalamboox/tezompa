@@ -56,10 +56,10 @@
                             <label class="form-check-label text-white" for="show_password">{{ __('Mostrar contraseñas') }}</label>
                         </div>
                         <div class="text-end my-4">
-                            <button type="submit" class="btn btn-primary w-100"><i class="fa-solid fa-user-plus me-2"></i>{{ __('Registrar') }}</button>
+                            <button type="submit" class="btn-register btn btn-primary w-100"><i class="fa-solid fa-user-plus me-2"></i>{{ __('Registrar') }}</button>
                         </div>
                         <div class="text-end">
-                            <small><a href="{{ route('login') }}" class="register-account-exist text-white">{{ __('¡Ya tengo un cuenta!') }}</a></small>
+                            <small><a href="{{ route('login') }}" class="register-login text-white">{{ __('¡Ya tengo un cuenta!') }}</a></small>
                         </div>
                     </form>
                 </div>
