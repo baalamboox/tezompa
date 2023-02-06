@@ -8,6 +8,8 @@ const resizeScreen = () => {
     ];
 }
 
-window.addEventListener('load', resizeScreen);
-window.addEventListener('resize', resizeScreen);
+setInterval(resizeScreen, 1000);
+
+// window.addEventListener('load', resizeScreen);
+// window.addEventListener('resize', resizeScreen);
 
