@@ -18,7 +18,7 @@
                         <div class="text-white" id="weather_container"></div>
                     </li>
                     <li class="nav-item d-sm-none d-md-block">
-                        <div class="text-white text-center" id="">
+                        <div class="text-white text-center">
                             <small class="d-block" id="time"></small>
                             <small class="d-block" id="date"></small>
                         </div>
@@ -35,29 +35,18 @@
         </div>
     </nav>
 </header>
-<main class="bg-dark">
-    @yield('scaffolding')
-</main>
-<footer class="d-flex align-items-center justify-content-center bg-dark shadow-lg sticky-bottom">
-    <span class="text-white">Xzunun &copy; 2023</span>
-</footer>
-
-
-{{-- <nav class="nav-container d-flex flex-column justify-content-between shadow-lg">
-    <div class="btn-open-nav rounded-circle d-flex align-items-center justify-content-end pe-2 shadow" id="open_nav"
-        title="Mostrar barra de navegación">
+<nav class="d-flex flex-column justify-content-between bg-dark shadow-lg">
+    <span class="btn-open-nav rounded-circle d-flex align-items-center justify-content-end pe-2 shadow" id="open_nav" title="Mostrar barra de navegación">
         <i class="fa-solid fa-chevron-right"></i>
-    </div>
-    <div class="btn-close-nav rounded-circle d-flex align-items-center ps-2 shadow" id="close_nav"
-        title="Ocultar barra de navegación">
+    </span>
+    <span class="btn-close-nav rounded-circle d-flex align-items-center ps-2 shadow" id="close_nav" title="Ocultar barra de navegación">
         <i class="fa-solid fa-chevron-left"></i>
-    </div>
+    </span>
     <div class="text-center my-4">
-        <img src="{{ asset('favicon.png') }}" class="shadow-lg border rounded-circle p-1 bg-white" alt="Logo"
-            width="120px" height="120px">
+        <img src="{{ asset('favicon.png') }}" class="rounded-circle shadow-lg border p-1 bg-white" alt="Logo" width="120px" height="120px">
         <div class="mt-2">
             <span class="fs-4 text-white">{{ config('app.name') }}</span>
-            <small class="d-block text-white">Tlapalería</small>
+            <small class="d-block text-primary">{{ __('Tlapalería') }}</small>
         </div>
     </div>
     <div class="h-100 mb-4 overflow-scroll">
@@ -83,12 +72,12 @@
             <li class="nav-item w-100">
                 <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#stock" aria-expanded="false" aria-controls="stock">
-                    <i class="fa-solid fa-caret-right me-2"></i>
+                    <i class="fa-solid fa-caret-right me-2 text-primary"></i>
                     <i class="fa-solid fa-cubes me-2"></i>
                     {{ __('Almacén') }}
                 </button>
                 <div class="collapse px-3" id="stock">
-                    <div class="bg-card card card-body border-0">
+                    <div class="card card-body border-0 bg-secondary">
                         <ul class="nav">
                             <li class="nav-item w-100">
                                 <a href="/add_product" class="nav-link px-0 text-white">
@@ -127,12 +116,12 @@
             <li class="nav-item w-100">
                 <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse"
                     data-bs-target="#accounting" aria-expanded="false" aria-controls="accounting">
-                    <i class="fa-solid fa-caret-right me-2"></i>
+                    <i class="fa-solid fa-caret-right me-2 text-primary"></i>
                     <i class="fa-solid fa-calculator me-2"></i>
                     {{ __('Contabilidad') }}
                 </button>
                 <div class="collapse px-3" id="accounting">
-                    <div class="bg-card card card-body border-0">
+                    <div class="card card-body border-0 bg-secondary">
                         <ul class="nav">
                             <li class="nav-item w-100">
                                 <a href="/cash_register" class="nav-link px-0 text-white">
@@ -161,12 +150,12 @@
     <div class="mb-4">
         <button class="btn w-100 text-start text-white" type="button" data-bs-toggle="collapse" data-bs-target="#user"
             aria-expanded="false" aria-controls="user">
-            <i class="fa-solid fa-caret-right me-2"></i>
-            <i class="fa-solid fa-user me-2 rounded-circle border p-2 shadow"></i>
+            <i class="fa-solid fa-caret-right me-2 text-primary"></i>
+            <i class="fa-solid fa-user me-2 rounded-circle border border-primary p-2 shadow"></i>
             {{ Auth::user()->name }}
         </button>
         <div class="collapse px-3" id="user">
-            <div class="bg-card card card-body border-0">
+            <div class="card card-body border-0 bg-secondary">
                 <ul class="nav text-white">
                     <li class="nav-item border-dark border-bottom w-100">
                         <a href="/config" class="nav-link px-2 text-white">
@@ -177,7 +166,8 @@
                     <li class="nav-item w-100 mt-2 text-center">
                         <a href="{{ route('logout') }}" class="nav-link px-0 pb-0 text-white"
                             onclick="event.preventDefault(); document.querySelector('#logout_form').submit();">
-                            <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>Cerrar sesión
+                            <i class="fa-solid fa-arrow-right-from-bracket me-2"></i>
+                            {{ __('Cerrar sesión') }}
                         </a>
                         <form action="{{ route('logout') }}" method="POST" id="logout_form">
                             @csrf
@@ -188,5 +178,13 @@
         </div>
     </div>
 </nav>
- --}}
+<main>
+    @yield('scaffolding')
+    @yield('scaffolding')
+    @yield('scaffolding')
+    @yield('scaffolding')
+</main>
+<footer class="d-flex align-items-center justify-content-center bg-dark shadow-lg sticky-bottom">
+    <span class="text-white">Xzunun &copy; 2023</span>
+</footer>
 @endsection
