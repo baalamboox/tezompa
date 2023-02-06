@@ -1,6 +1,6 @@
 const main = document.getElementsByTagName('main')[0];
 
-main?.offsetHeight > window.innerHeight ? [
+main?.offsetHeight > window.outerHeight ? [
     main?.classList.remove('fill-screen'),
 ] : [
     main?.classList.add('fill-screen'),
