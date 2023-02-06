@@ -35,7 +35,7 @@
         </div>
     </nav>
 </header>
-<main>
+<main class="bg-dark">
     @yield('scaffolding')
 </main>
 <footer class="d-flex align-items-center justify-content-center bg-dark shadow-lg sticky-bottom">

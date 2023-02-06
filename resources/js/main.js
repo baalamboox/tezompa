@@ -1,15 +1,21 @@
 const main = document.getElementsByTagName('main')[0];
 
-const resizeScreen = () => {
-    main?.offsetHeight > window.innerHeight ? [
-        main?.classList.remove('fill-screen'),
-    ] : [
-        main?.classList.add('fill-screen'),
-    ];
-}
+main?.offsetHeight > window.innerHeight ? [
+    main?.classList.remove('fill-screen'),
+] : [
+    main?.classList.add('fill-screen'),
+];
 
-setInterval(resizeScreen, 1000);
+// const resizeScreen = () => {
+//     main?.offsetHeight > window.innerHeight ? [
+//         main?.classList.remove('fill-screen'),
+//     ] : [
+//         main?.classList.add('fill-screen'),
+//     ];
+// }
 
-// window.addEventListener('load', resizeScreen);
-// window.addEventListener('resize', resizeScreen);
+// setInterval(resizeScreen, 1000);
+
+// // window.addEventListener('load', resizeScreen);
+// // window.addEventListener('resize', resizeScreen);
 
