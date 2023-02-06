@@ -47,5 +47,15 @@ const getCustomDate = () => {
     return completeDate;
 }
 
-time?.append('83:97');
+// Enhance this clock
+
+const getCustomTime = () => {
+    let date = new Date();
+    let completeTime = date.getHours() + ':' + date.getMinutes();
+    time.textContent = completeTime;
+    setInterval(getCustomTime, 1000);
+}
+
+time != null ? getCustomTime() : false;
+
 date?.append(getCustomDate());
