@@ -36,12 +36,16 @@
     </nav>
 </header>
 <nav class="d-flex flex-column justify-content-between bg-dark shadow-lg">
-    <span class="btn-open-nav rounded-circle d-flex align-items-center justify-content-end pe-2 shadow" id="open_nav" title="Mostrar barra de navegación">
-        <i class="fa-solid fa-chevron-right"></i>
+
+
+    <span class="btn-open-nav d-flex align-items-center justify-content-end  pe-1 rounded-end bg-dark text-white" id="open_nav" title="Mostrar barra de navegación">
+        <i class="fa-solid fa-chevron-right text-primary"></i>
     </span>
-    <span class="btn-close-nav rounded-circle d-flex align-items-center ps-2 shadow" id="close_nav" title="Ocultar barra de navegación">
-        <i class="fa-solid fa-chevron-left"></i>
+    <span class="btn-close-nav d-flex align-items-center justify-content-end pe-1 rounded-end bg-dark text-white" id="close_nav" title="Ocultar barra de navegación">
+        <i class="fa-solid fa-chevron-left text-primary"></i>
     </span>
+
+
     <div class="text-center my-4">
         <img src="{{ asset('favicon.png') }}" class="rounded-circle shadow-lg border p-1 bg-white" alt="Logo" width="120px" height="120px">
         <div class="mt-2">

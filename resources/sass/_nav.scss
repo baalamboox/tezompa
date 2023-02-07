@@ -3,11 +3,23 @@ body>nav {
     width: 300px;
     height: 100vh;
     top: 0;
+    z-index: 1;
+
     .btn-open-nav {
         position: absolute;
-        width: 32px;
-        height: 32px;
-        top: 50px;
-        background-color: red;
+        width: 16px;
+        height: 64px;
+        top: 50%;
+        left: 0px;
+        cursor: pointer;
+    }
+
+    .btn-close-nav {
+        position: absolute;
+        width: 16px;
+        height: 64px;
+        top: 50%;
+        right: -16px;
+        cursor: pointer;
     }
 }
